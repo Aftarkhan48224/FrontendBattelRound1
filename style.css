@@ -1,0 +1,126 @@
+:root {
+  --scroll-ratio: 0;
+  --primary: #2a9d8f;
+  --secondary: #264653;
+  --light: #f4f4f4;
+  --dark: #1b1b1b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--light);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header.hero {
+  background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero p {
+  margin-top: 1rem;
+  color: #ddd;
+}
+
+.hero button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+.feature {
+  max-width: 300px;
+  text-align: center;
+}
+
+.feature h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.stats {
+  background: var(--dark);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.stat-box {
+  display: inline-block;
+  margin: 2rem;
+}
+
+.stat-box h2 {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+canvas {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.testimonials {
+  padding: 4rem 2rem;
+  background: var(--secondary);
+  color: #fff;
+  text-align: center;
+}
+
+.testimonial {
+  display: none;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.testimonial.active {
+  display: block;
+}
+.footer {
+  background-color: var(--secondary);
+  color: #ccc;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+  border-top: 1px solid #444;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+}
